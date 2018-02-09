@@ -1,0 +1,16 @@
+<div class="panel panel-warning">
+    <div class="panel-heading">Expressions: validate input</div>
+    <div class="panel-body">
+        <div class="col-xs-2">
+        <input type="text" [(ngModel)] ="textEntered" class="form-control input-sm">   
+    </div>    
+        <button type="button" class="btn btn-primary" (click)="onvalidatebtnclick()"> Validate
+             </button>
+             <p *ngIf="isTextEntered; else other_content"> You entered: {{textEntered}}</p>
+
+             <ng-template #other_content><p>no text found...</p></ng-template>
+     
+   
+   </div>
+  </div>
+  
