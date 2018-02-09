@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+
+<div style="text-align:center">
+  <h1>
+    Learning  {{ title }}!
+  </h1>
+ 
+</div>
+
+<div class="container">
+<div class="panel-group">
+<div class="panel panel-primary">
+  <div class="panel-heading">Data binding: data is binded to a property </div>
+  <div class="panel-body">
+    <div>Date : {{ currentDate}} </div>
+    <div>Date with Time: {{ getcurrenttime()}} </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">Event binding: button click will trigger an event in component class</div>
+  <div class="panel-body">
+    <button (click)="onbtnclick()" type="button" class="btn btn-primary">Click to incriment:  <span class="badge">{{count}}</span></button>
+  </div>
+</div>
+<div>
+   
+ 
+</div>
